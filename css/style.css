@@ -1,0 +1,274 @@
+/*--- START/ global selector --- */
+* {
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  margin-inline: auto;
+  padding: .9375rem;
+}
+
+/* small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1100px;
+  }
+}
+
+/*--- END/ global selector --- */
+/*--- START/ main-container --- */
+
+main.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: dense;
+  gap: 1.25rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+section>.card {
+  width: 100%;
+}
+
+/*--- END/ main-container --- */
+/*------- START/ COOL ONE ------- */
+/*--- START/ bio-special --- */
+
+section>.bio-special .box-img,
+section>.cooking-active .box-img,
+section>.music-active .box-img,
+section>.school-party .box-img {
+  width: 100%;
+  position: relative;
+}
+
+section>.bio-special .box-img {
+  width: 100%;
+  position: relative;
+  aspect-ratio: 37/25;
+}
+
+section>.bio-special .box-img img,
+section>.cooking-active .box-img img,
+section>.music-active .box-img img,
+section>.school-party .box-img img,
+section>.bio-special .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section>.bio-special .box-img span,
+section>.cooking-active .box-img span,
+section>.music-active .box-img span,
+section>.school-party .box-img span,
+section>.bio-special .box-img span {
+  display: block;
+  background-color: #495052;
+  color: #eee;
+  font-size: .8rem;
+  text-transform: uppercase;
+  padding: .3125rem .625rem;
+  position: absolute;
+  top: .9375rem;
+  right: .9375rem;
+  border-radius: .25rem;
+  -webkit-border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  -ms-border-radius: .25rem;
+  -o-border-radius: .25rem;
+}
+
+section>.bio-special figcaption.text,
+section>.cooking-active figcaption.text,
+section>.music-active figcaption.text,
+section>.school-party figcaption.text,
+section>.bio-special figcaption.text {
+  color: #fff;
+  padding: 1.6rem;
+  margin-top: -5px;
+}
+
+section>.bio-special figcaption.text {
+  background-color: #EDBF47;
+}
+
+section>.bio-special figcaption.text h3,
+section>.cooking-active figcaption.text h3,
+section>.music-active figcaption.text h3,
+section>.school-party figcaption.text h3,
+section>.bio-special figcaption.text h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+section>.bio-special figcaption.text p,
+section>.cooking-active figcaption.text p,
+section>.music-active figcaption.text p,
+section>.school-party figcaption.text p,
+section>.bio-special figcaption.text p {
+  font-size: .875rem;
+  font-weight: 400;
+  margin-block: .9375rem;
+  text-transform: none;
+  line-height: 1.8;
+}
+
+section>.bio-special figcaption.text a,
+section>.cooking-active figcaption.text a,
+section>.music-active figcaption.text a,
+section>.school-party figcaption.text a,
+section>.bio-special figcaption.text a {
+  display: inline-block;
+  background-color: #0000001c;
+  padding: 5px 15px;
+  color: rgba(255, 255, 255, 0.692);
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/*--- END/ bio-special --- */
+/*--- END/ cooking active --- */
+
+section>.cooking-active .box-img {
+  aspect-ratio: 37/20;
+}
+
+section>.cooking-active figcaption.text {
+  background-color: #6FC191;
+  color: #fff;
+  padding: 1.6rem;
+  margin-top: -5px;
+}
+
+/*--- END/ cooking active --- */
+/*---------- END/ COOL ONE ------------ */
+/*---------- START/ COOL two ------------ */
+/*--- START/ quot --- */
+section>.card.quot {
+  background-color: #EC774B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  padding: 15%;
+  gap: 20px;
+}
+
+section>.quot p {
+  font-size: 19px;
+  line-height: 1.7;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+section>.quot small {
+  position: relative;
+  padding-left: 30px;
+}
+
+section>.quot small::before {
+  content: '\f10e';
+  font-family: "Font Awesome 5 Free";
+  color: #DC724B;
+  font-weight: 900;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*--- END/ quot --- */
+/*--- START/ music-active --- */
+
+section>.music-active .box-img {
+  aspect-ratio: 37/28;
+}
+
+section>.music-active figcaption.text {
+  background-color: #E16C6C;
+}
+
+
+/*--- END/ music-active --- */
+/*---------- END/ COOL two ------------ */
+/*---------- START/ COOL tree ------------ */
+
+/*--- START/ school-party --- */
+
+section>.school-party .box-img {
+  aspect-ratio: 37/40;
+}
+
+section>.school-party figcaption.text {
+  background-color: #74CEE4;
+}
+
+/*--- END/ school-party --- */
+/*--- START/ events --- */
+section>.events {
+  background-color: #C389CE;
+  padding: 14% 20px;
+  text-align: center;
+}
+
+section>.events h3 {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+section>.events i {
+  color: #fff;
+}
+
+/*--- END/ events --- */
+/*---------- END/ COOL tree ------------ */
+/*  */
+/* 37 : 23 */
